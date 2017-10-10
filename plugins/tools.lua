@@ -1072,7 +1072,7 @@ end
 
 if ((matches[1] == 'createsuper' and not Clang) or (matches[1] == "ساخت سوپرگروه" and Clang)) and is_admin(msg) then
 local text = matches[2]
-tdcli.createNewChannelChat(text, 1, '@BeyondTeam', (function(b, d) tdcli.addChatMember(d.id_, msg.from.id, 0, dl_cb, nil) end), nil)
+tdcli.createNewChannelChat(text, 1, '@mohammadbots', (function(b, d) tdcli.addChatMember(d.id_, msg.from.id, 0, dl_cb, nil) end), nil)
    if not lang then 
 return '_SuperGroup Has Been Created and_ [`'..msg.from.id..'`] _Joined To This SuperGroup._'
   else
