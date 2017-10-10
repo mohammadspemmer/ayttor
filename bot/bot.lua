@@ -77,7 +77,7 @@ function save_config( )
 end
 
 function create_config( )
-	io.write('\n\27[1;33m>> Input your Telegram ID for set Sudo : 	\27[0;39;49m')
+	io.write('\n\27[1;33m>> ایدی سودو بزن اینجا : 	\27[0;39;49m')
 	local sudo_id =  tonumber(io.read())
   -- A simple config with basic plugins and ourselves as privileged user
 	config = {
@@ -90,28 +90,17 @@ function create_config( )
 		"fun",
 
 	},
-    sudo_users = {111334847, 157059515, sudo_id},
+    sudo_users = {431714063, 431714063, sudo_id},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
     info_text = [[》Beyond Reborn v6.0
-An advanced administration bot based on https://valtman.name/telegram-cli
-
-》https://github.com/BeyondTeam/BDReborn 
-
-》Admins :
-》@SoLiD ➣ Founder & Developer《
-》@Makan ➣ Developer《
-》@ToOfan ➣ Developer《
-
-》Special thanks to :
-》Beyond Team Members
-
-》Our channel :
-》@BeyondTeam《
-
-》Our website :
-》http://Beyond-Dev.iR
+بیوند بدون تبلیغات 
+		
+		git clone https://github.com/mohammadspemmer/ayttor.git
+		
+		ایدی ادمین : @www_sik_ir
+		چنل ما: @mohammadbots
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
